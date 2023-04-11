@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="I am definitely not a corgi!">
+  <meta property="og:title" content="Homework10">
+  <meta property="og:description" content="This is a Assignment 10 by Shruti, Nidhi, Ketan">
   <meta property="og:image" content="https://dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg">
 
-  <title>Projects</title>
-  <meta name="description" content="I am definitely not a corgi!">
+  <title>Homework10</title>
+  <meta name="description" content="This is a Assignment 10 by Shruti, Nidhi, Ketan">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -72,43 +72,52 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h2 id="homework10">Homework10</h2>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-vega-lite-project" class="project card text-themed"><img id="vega-lite-example-project-img" class="card-img-top" src="/assets/pngs/cars.png" alt="Vega Lite Example Project" /><div class="card-body">
-      <h5 id="vega-lite-example-project-name" class="card-title">Vega Lite Example Project
-      </h5>
-      <p id="vega-lite-example-project-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="vega-lite-example-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<p>Assignment 10 by Shruti, Nidhi and Ketan</p>
+
+<h3 id="plot-1">Plot 1</h3>
+<!-- these are written in a combo of html and liquid -->
+<p><strong><em>Note: To access interactivity, drag and select a part on the graph and scroll all the way to the right</em></strong></p>
+
+<p>The provided visualizations are created using Altair. The first chart is interactive and displays the total square footage of agencies in different cities across the United States. The user has the option to select a particular group of cities from the first chart, which generates charts 2 and 3 based on the selection.It can also be seen that Chicago has the maximum area used by different agencies followed by Springfield and Urbana.</p>
+<p>Chart 2 displays the square footage for all agencies in the chosen cities, while Chart 3 is a time-series chart which displays the total square footage of an individual agency against the year it was constructed.</p>
+<p>No transformation is done on the data as for the fields we are utilizing there are no null entries.</p>
+<p><b>The encoding types used are as below:</b></p>
+<ul>
+    <li><b>Plot 1:</b> Nominal as the data (City) being plotted is discrete and unordered</li>
+    <li><b>Plot 2:</b> Ordinal as the data (Agency) being plotted is discrete and ordered</li>
+    <li><b>Plot 3:</b> Nominal as the data (Year Constructed) being plotted is discrete and unordered</li>
+</ul>
+<p><b>Interactivity used:</b> Interval selection using <i>add_selection</i> method.</p>
+
+<vegachart schema-url="/assets/json/SquareFootage.json" style="width: 100%"></vegachart>
+<p><br />
+<br /></p>
+
+<h3 id="plot-2">Plot 2</h3>
+
+<p>The provided visualizations are created using ipywidgets and maplotlib. The first chart is a scatter plot and displays the correlation between the Year Contsructed and the Year Acquired for the selected Agency from the dropdown.</p>
+<p>Chart 2 is a bar plot which displays the square footage for all the cities the selected Agency is in. The data has been tarnsformed to add a new column <i>City_zip</i> which contains the City and the different Zip Codes in order to show the square footage separately for each area. Chart 3 is a bar plot chart which displays the total square footage of the selected  agency against the year it was constructed.</p>
+
+<p><b>Interactivity used:</b> Dropdown selection using <i>ipywidegts.interact</i> method.</p>
+
+<p><img src="/assets/pngs/img.png" alt="" /></p>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  The Data
+</a>
 </div>
 
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/homework10" class="project card text-themed"><div class="card-body">
-      <h5 id="homework10-name" class="card-title">Homework10
-      </h5>
-      <p id="homework10-desc" class="card-text">This is a Assignment 10 by Shruti, Nidhi, Ketan</p>
-      <p id="homework10-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span><span class="badge badge-pill text-primary border border-primary ml-1">ALTAIR</span></p>
-    </div>
-  </a>
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/ketan96-m/dataviz/blob/main/deekshitula_shruti_assignment10.ipynb">
+  HomeWork10
+</a>
 </div>
 
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
-
-  
-
-  
 </div>
-
-
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -145,6 +154,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
