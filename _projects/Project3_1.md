@@ -56,9 +56,9 @@ the imports in a geographical distrubiton where we can see the countries on the 
 
 
 <div class="left">
-{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv" text="The Data" %}
+{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/FoodImports.csv" text="Food Imports Dataset" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/ketan96-m/dataviz/blob/main/deekshitula_shruti_assignment10.ipynb" text="HomeWork10" %}
+{% include elements/button.html link="https://github.com/ketan96-m/dataviz/blob/main/Group11_finalproject_part3.ipynb" text="Group11_Project3" %}
 </div>
