@@ -44,8 +44,12 @@ The first step for the user to interact with the charts is to select a category 
 
 The first contextual data display shows the food imports comparision of United states and India.
 
+![Import USA vs India ](/assets/pngs/import_usa_india.PNG)
+
 The second contextual data display shows the food imports comparision of United states and China, this vizualisation shows
 the imports in a geographical distrubiton where we can see the countries on the map.
+
+![Import USA vs China ](/assets/pngs/import_usa_china.PNG)
 
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/project3_chart.json" style="width: 100%"></vegachart>
