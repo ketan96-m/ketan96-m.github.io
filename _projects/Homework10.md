@@ -1,7 +1,7 @@
 ---
 name: Homework10
 tools: [Python, HTML, vega-lite, ALTAIR]
-# image: assets/pngs/cars.png
+image: assets/pngs/img.png
 description: This is a Assignment 10 by Shruti, Nidhi, Ketan
 custom_js:
   - vega.min

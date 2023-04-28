@@ -1,8 +1,8 @@
 ---
-name: Homework10
+name: Project 3.1
 tools: [Python, HTML, vega-lite, ALTAIR]
-# image: assets/pngs/cars.png
-description: This is a Assignment 10 by Shruti, Nidhi, Ketan
+image: assets/pngs/Project3_screenshot.png
+description: This is the Final Project 3.1 by Shruti, Nidhi, Ketan
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,7 +11,7 @@ custom_js:
 ---
 ## Project 3.1
 
-Assignment 10 by Shruti, Nidhi and Ketan
+Final Project 3.1 by Shruti, Nidhi and Ketan
 
 
 <h2> How much is US actually spending on food imports? </h2>
