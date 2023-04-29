@@ -75,14 +75,14 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h2 id="project-31">Project 3.1</h2>
 
-<p>Final Project 3.1 by Shruti, Nidhi and Ketan</p>
+<p>Final Project 3.1 published by Shruti Deekshitula, Nidhi Yadav and Ketan Mahajan</p>
 
 <h2> How much is US actually spending on food imports? </h2>
-<h3> Published by: Nidhi Yadav, Ketan Mahajan, Shruti Deekshitula </h3>
+<!-- <h5> Published by: Nidhi Yadav, Ketan Mahajan, Shruti Deekshitula </h5> -->
 
 <h3> Introduction </h3>
 
-<p>U.S. consumers demand variety, quality, and convenience in the foods they consume As America is becoming more ethnically diverse, the food basket reflects a growing share of tropical products, spices, and imported gourmet products. Seasonal and climatic factors drive U.S. imports of popular types of fruits and vegetables and tropical products, such as cocoa and coffee. In addition, a growing share of U.S. imports can be attributed to intra-industry trade, whereby agricultural-processing industries based in the United States carry out certain processing steps offshore and import products at different levels of processing from their subsidiaries in foreign markets</p>
+<p>U.S. consumers demand variety, quality, and convenience in the foods they consume. As America is becoming more ethnically diverse, the food basket reflects a growing share of tropical products, spices, and imported gourmet products. Seasonal and climatic factors drive U.S. imports of popular types of fruits and vegetables and tropical products, such as cocoa and coffee. In addition, a growing share of U.S. imports can be attributed to intra-industry trade, whereby agricultural-processing industries based in the United States carry out certain processing steps offshore and import products at different levels of processing from their subsidiaries in foreign markets.</p>
 
 <p>This data set provides import values of edible products (food and beverages) entering U.S. ports and their origin of shipment. Data are from the U.S. Department of Commerce, U.S. Census Bureau. Food and beverage import values are compiled by calendar year into food groups corresponding to major commodities or level of processing.</p>
 
@@ -101,20 +101,29 @@ with 5 (Commodity, Country, UOM, Category, Subcategory) being categorical and th
 
 <p>The first step for the user to interact with the charts is to select a category from the dropdown (for example:  animals, fish etc.), which will generate the bar plot. The bar plot will display the value bifurcated by commodities that are present in the category selected from the dropdown on the x-axis and corresponding food value in million $ on the y-axis. The user can further interact with this plot by clicking on a bar which will select the commodity represented by that bar. The multi-line plot takes the selected commodity as input and gets updated to show the import value for each country over a time series for the years 1999-2022.</p>
 
+<vegachart schema-url="/assets/json/project3_chart.json" style="width: 100%"></vegachart>
+<p><br />
+<br /></p>
+
 <h3> Contextual Data </h3>
 
 <p>The first contextual data display shows the food imports comparision of United states and India.</p>
 
-<p><img src="/assets/pngs/import_usa_india.PNG" alt="Import USA vs India " /></p>
+<iframe src="https://data.worldbank.org/share/widget?end=2021&amp;indicators=TM.VAL.FOOD.ZS.UN&amp;locations=IN-US&amp;start=1962&amp;view=chart" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+<!-- ![Import USA vs India ](/assets/pngs/import_usa_india.PNG) -->
 
 <p>The second contextual data display shows the food imports comparision of United states and China, this vizualisation shows
 the imports in a geographical distrubiton where we can see the countries on the map.</p>
 
-<p><img src="/assets/pngs/import_usa_china.PNG" alt="Import USA vs China " /></p>
+<iframe src="https://data.worldbank.org/share/widget?end=2021&amp;indicators=TM.VAL.FOOD.ZS.UN&amp;locations=US-CN&amp;start=1962&amp;view=map" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+<!-- ![Import USA vs China ](/assets/pngs/import_usa_china.PNG) -->
 
-<vegachart schema-url="/assets/json/project3_chart.json" style="width: 100%"></vegachart>
-<p><br />
-<br /></p>
+<h3> References: </h3>
+<ul>
+  <li><a href="https://data.worldbank.org/indicator/TM.VAL.FOOD.ZS.UN?end=2021&amp;locations=IN&amp;start=1962&amp;view=chart">https://data.worldbank.org/indicator/TM.VAL.FOOD.ZS.UN?end=2021&amp;locations=IN&amp;start=1962&amp;view=chart</a></li>
+  <li><a href="https://www.ers.usda.gov/data-products/u-s-food-imports/">https://www.ers.usda.gov/data-products/u-s-food-imports/</a></li>
+  <li><a href="https://altair-viz.github.io/">https://altair-viz.github.io/</a></li>
+</ul>
 
 <div class="left">
 <a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/ketan96-m/dataviz/blob/main/FoodImports.csv">
